@@ -89,9 +89,32 @@ $wel->display();
 $wel->display2();
 
 
+// interface 
+
+interface Animal{
+    public function makesound();
+}
 
 
+class Cat implements Animal{
 
+    public function makesound(){
+        echo "cat say meow";
+    }
+}
+
+
+class Dog implements Animal{
+
+    public function makesound(){
+        echo "dog say bark bark <br/>";
+    }
+}
+$cat =new Cat();
+$cat->makesound();
+echo "<br/>";
+$dog =new Dog();
+$dog->makesound();
 
 
 
