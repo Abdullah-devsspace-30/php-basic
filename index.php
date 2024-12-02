@@ -1,6 +1,55 @@
 <?php
 
 
+class Person{
+    public $id;
+    public $name;
+    public $email;
+    public function __construct($id,$name,$email) {
+        $this->id = $id;
+        $this->name = $name;
+        $this->email = $email;
+    }
+
+    public function display()   
+    {
+        echo "EMPLOYEE ID : " . $this->id ."<br/>";
+        echo "NAME : " . $this->name ."<br/>";
+        echo "EMAIL : " . $this->email ."<br/>";
+    }
+
+    // class object
+
+}
+$person = new Person(20025,"Muhammad Abdullah Baig","bsce20025@itu.edu.pk");
+$person->display();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 $string = "hello world";
 echo $string;
 echo "<br/>";
@@ -62,4 +111,10 @@ do {
    echo "<br/>";
 } while ($a <= 10);
 
+echo "<br/>";
 echo "**** end ***** <br/>";
+
+
+
+echo "***** OOP IN PHP ***** <br/>";
+
