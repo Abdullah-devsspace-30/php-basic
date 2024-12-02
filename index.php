@@ -169,4 +169,19 @@ do {
 } while ($a <= 10);
 
 echo "<br/>";
+echo "<br/>";
+echo "<br/>";
+echo "<br/>";
+
+$number1 = 12;
+$casting = (string)$number1;
+echo var_dump($casting) ."<br/>"; 
+
+$str = "123";
+$casting_to_dig = (int)$str;
+echo var_dump($casting_to_dig) ."<br/>"; 
+
 echo "**** end ***** <br/>";
+
+
+
