@@ -62,6 +62,33 @@ class ChildClass extends ParentClass
 $child =  new ChildClass("Smith", "Alan");
 $child->display();
 
+echo "<br/>";
+echo "<br/>";
+echo "<br/>";
+echo "<br/>";
+
+trait messag1{
+    public function display(){
+        echo "Hello, I am a trait method <br>";
+    }
+}
+
+trait messag2{
+    public function display2(){
+        echo "hello, i am trai2 <br/>";
+    }
+}
+class Welcome{
+    use messag1;
+    use messag2;
+    public function __construct() {
+    }
+}
+$wel =  new Welcome();
+$wel->display();
+$wel->display2();
+
+
 
 
 
