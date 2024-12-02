@@ -1,5 +1,5 @@
 <?php
-
+echo "***** OOP IN PHP ***** <br/>";
 
 class Person
 {
@@ -28,11 +28,39 @@ $person->display();
 
 
 
+echo "<br/>";
+echo "<br/>";
+echo "<br/>";
 
 
+echo "***** INHERITANE IN PHP ***** <br/>";
 
 
+class ParentClass
+{
+    public $name;
+    public function __construct($name)
+    {
+        $this->name = $name;
+    }
+}
 
+class ChildClass extends ParentClass
+{
+    public $childname;
+    public function __construct($childname,$parent_name)
+    {
+        $this->childname = $childname;
+        $this->name = $parent_name;
+    }
+    public function display()
+    {
+        echo $this->childname . " " . $this->name . "<br/>";
+    }
+}
+
+$child =  new ChildClass("Smith", "Alan");
+$child->display();
 
 
 
@@ -115,7 +143,3 @@ do {
 
 echo "<br/>";
 echo "**** end ***** <br/>";
-
-
-
-echo "***** OOP IN PHP ***** <br/>";
